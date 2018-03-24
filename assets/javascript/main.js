@@ -29,7 +29,7 @@ function searchForGifs() {
         url: "https://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + apiKey + "&limit=40",
         method: "GET"
     }).then(function (response) {
-        emptyImgDivs();
+
         var counter = 1;
 
         $("#gif-header").empty();
@@ -50,19 +50,19 @@ function searchForGifs() {
             $img.attr("data-state", "still");
             $img.attr("src", dataStill);
             $img.attr("id", "gif");
-            $div.append($p);
+            $div.prepend($p);
             $div.prepend("</br>");
             $div.prepend($img);
             $("#gif-container").scrollTop();
 
             if (counter === 5) {
                 counter = 1;
-                $("#" + counter).append($div);
+                $("#" + counter).prepend($div);
                 counter++;
             }
             else {
 
-                $("#" + counter).append($div);
+                $("#" + counter).prepend($div);
                 counter++;
             }
 
