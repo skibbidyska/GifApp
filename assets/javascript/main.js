@@ -26,7 +26,7 @@ function animateGifs() {
 
 function searchForGifs() {
     $.ajax({
-        url: "http://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + apiKey + "&limit=40",
+        url: "https://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + apiKey + "&limit=40",
         method: "GET"
     }).then(function (response) {
         emptyImgDivs();
