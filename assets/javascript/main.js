@@ -83,7 +83,7 @@ $("#search-button").on("click", function () {
     }
     else {
 
-        $("#b-" + buttonCounter).append("<button class='btn btn-lg btn-block btn-success btn-toolbar text-white mt-3 buttonQuery'>" + query.toUpperCase() + "</button>");
+        $("#b-" + buttonCounter).append("<button class='btn btn-success btn-toolbar text-white mt-3 buttonQuery'>" + query.toUpperCase() + "</button>");
         buttonCounter++;
     }
 
