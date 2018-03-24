@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Random Gif Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    
+<body class="bg-dark">
+<div class="navbar navbar-extend navbar-dark bg-dark border-bottom border-white">
+    <h1 class="navbar-brand navbar-dark text-success">GIF SEARCH</h1>
+    <a class="navbar-brand text-white">Navbar</a>
+    <a class="navbar-brand text-white">Navbar</a>
+    <a class="navbar-brand text-white">Navbar</a>
+    <form class="form-inline">
+        <input id="user-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+<div class="border-bottom border-white">
+    <div id="gif-container-wrapper" class="container h-100 bg-success">
+        <div id="gif-header" class="text-center mt-3">
+
+        </div>
+        <div id="gif-container" class="row bg-success">
+            <div id="1" class="col-md-3"></div>
+            <div id="2" class="col-md-3"></div>
+            <div id="3" class="col-md-3"></div>
+            <div id="4" class="col-md-3"></div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="container">
+        <div id="gif-header" class="text-center mt-3">
+            <h4 class="text-white">Previous Searches</h4>
+        </div>
+        <div id="button-container" class="row">
+            <div class="mx-auto">
+                <div id="b-1" class="col-md-2"></div>
+            </div>
+            <div class="mx-auto">
+                <div id="b-2" class="col-md-2"></div>
+            </div>
+            <div class="mx-auto">
+                <div id="b-3" class="col-md-2"></div>
+            </div>
+            <div class="mx-auto">
+                <div id="b-4" class="col-md-2"></div>
+            </div>
+            <div class="mx-auto">
+                <div id="b-5" class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/javascript/main.js"></script>
 </body>
 </html>
